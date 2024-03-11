@@ -90,14 +90,14 @@ function selectAnswer(index) {
         feedbackElement.style.color = 'green';
         document.getElementById('choices').appendChild(feedbackElement);
         currentScore++;
-        setTimeout(showNextQuestion, 10000); // Zeige nach 10 Sekunden die nächste Frage
+        setTimeout(showNextQuestion, 90000); // Zeige nach 90 Sekunden die nächste Frage
     } else {
         // Zeige das Feedback sofort, aber erlaube dem Benutzer nicht, zur nächsten Frage zu gehen, bis er die richtige Antwort gewählt hat
         const feedbackElement = document.createElement('p');
         feedbackElement.textContent = 'FALSCH.';
         feedbackElement.style.color = 'red';
         document.getElementById('choices').appendChild(feedbackElement);
-        setTimeout(showNextQuestion, 10000); // Zeige nach 10 Sekunden die nächste Frage
+        setTimeout(showNextQuestion, 90000); // Zeige nach 90 Sekunden die nächste Frage
     }
 }
 
